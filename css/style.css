@@ -1,0 +1,122 @@
+*{
+    /* font-family: "Poppins", serif; */
+    font-family: Open Sans, sans-serif !important;;
+}
+
+
+        /* General Reset */
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: #2c30380d; */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            padding: 0.5rem 1rem;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #cb0b0b;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            /* color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500; */
+            color: #000000b5;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                /* background-color: #121418; */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+                width: 100%;
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+                color: #000;
+            }
+
+            nav ul li {
+                margin:  auto;
+            }
+        }
+
+        /* Adjust Logo for Mobile */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 28px;
+            }
+
+            .header{
+                background: #cb0b0b;
+            }
+        }
+
+
+
+        .call-now{
+             font-size: 10px;
+    text-align: center;
+
+        }
+
+
+        .dial{
+            color: #cb0b0b;
+            font-size: 23px;
+            font-weight: 800;
+        
+        }
+
+
+        .speak{
+            font-size: 10px;
+            text-align: center;
+        }
+ 
